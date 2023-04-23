@@ -26,6 +26,7 @@ public class SessionApplicationStatePersistenceStrategyTest extends SeleniumTest
     @Test
     public void check()
     {
+        deleteAllVisibleCookies();
         open("/sign");
         clickAndWait("link=Sign in");
         String firstname = "test-firstname";
